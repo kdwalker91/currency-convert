@@ -1,0 +1,27 @@
+input {
+    margin-left: 20px;
+}
+div {
+    margin-top: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        text-align: center;
+    }
+    label {
+        font-size: 2em;
+        display: block;
+    }
+    input {
+        margin-left: 10px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: solid;
+        background-color: #eee;
+        padding: 10px;
+        font-size: 20px;
+    }
+  }

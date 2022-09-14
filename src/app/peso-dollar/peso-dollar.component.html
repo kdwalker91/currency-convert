@@ -1,0 +1,36 @@
+<h1>Cap Stopper</h1>
+
+<div>
+    <label>Peso Amount</label>
+    <input 
+        id="peso-amount" 
+        [ngModel]="peso" 
+        (ngModelChange)="calculateUSD($event)"
+        placeholder="Enter cost in Pesos"
+    >
+</div>
+
+<!-- <div>
+    <label>Dollar Amount</label>
+    <input id="usd-amount" [(ngModel)]="usd" placeholder="Enter USD Amount" type="number">
+</div> -->
+
+<!-- <div>
+    <p>Included Tax</p>
+    <input [(ngModel)]="tax" type="string" placeholder="cool" disabled>
+</div> -->
+<div *ngIf="isPeso">
+    <p> Before Tax {{beforeTax}}</p>
+    <p>USD Amount: {{dislayUSD}} </p>
+
+    <div>
+        <label>USD Paid</label>
+        <input 
+        [ngModel]="usdPaid" 
+        (ngModelChange)="calculateUSDChangeBack($event)"
+        id="usd-paid"
+        placeholder="Enter Amount Paid">
+    </div>
+
+    <p>Amount Back in Pesos: {{displayChangePesos}} </p>
+</div>

@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "peso-converter"
+  "defaultProject": "peso-converter",
+  "cli": {
+    "analytics": false
+  }
 }

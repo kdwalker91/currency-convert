@@ -5,6 +5,9 @@ div {
     margin-top: 20px;
     text-align: center;
 }
+html, body {
+    background-color: aqua;
+}
 @media only screen and (max-width: 600px) {
 
     h1 {
